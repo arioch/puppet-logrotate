@@ -9,7 +9,7 @@ BASIC USAGE:
 		logrotate::file { "apache2":
 			source     => "/etc/logrotate.d/apache2",
 			postrotate => "/etc/init.d/apache2 reload > /dev/null",
-			log        => [	"/var/log/apache2/access.log", "/var/log/apache2/error.log"	],
+			log        => [	"/var/log/apache2/access.log", "/var/log/apache2/error.log" ],
 		}
 	}
 
