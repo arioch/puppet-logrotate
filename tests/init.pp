@@ -1,2 +1,1 @@
-import logrotate
-
+include logrotate
