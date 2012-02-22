@@ -3,13 +3,9 @@
 #
 class logrotate::params {
   case $::operatingsystem {
-    'debian', 'ubuntu': {
+    'debian', 'ubuntu', 'RedHat', 'CentOS', 'Fedora': {
       $pkg     = 'logrotate'
       $confdir = '/etc/logrotate.d'
-    }
-
-    'RedHat', 'CentOS': {
-      $pkg = ''
     }
 
     default: {
