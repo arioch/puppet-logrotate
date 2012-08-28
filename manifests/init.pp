@@ -1,6 +1,5 @@
 class logrotate () {
-  include motd
-  motd::register{'logrotate': }
+  # motd::register{'logrotate': }
 
   class { 'logrotate::params': }
   class { 'logrotate::install': }
