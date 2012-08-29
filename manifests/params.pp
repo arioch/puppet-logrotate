@@ -3,13 +3,13 @@
 #
 class logrotate::params {
   case $::operatingsystem {
-    'debian', 'ubuntu', 'RedHat', 'CentOS', 'Fedora': {
+    'Debian', 'Ubuntu', 'RedHat', 'CentOS', 'Fedora', 'Scientific', 'OEL': {
       $pkg     = 'logrotate'
       $confdir = '/etc/logrotate.d'
     }
 
     default: {
-      fail 'Operating system not supported yet.'
+      fail "Operating system ${::operatingsystem} is not supported."
     }
   }
 }
