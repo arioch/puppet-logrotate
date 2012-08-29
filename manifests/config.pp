@@ -3,9 +3,9 @@
 #
 class logrotate::config {
   file { $logrotate::params::confdir:
+    ensure  => directory,
     owner   => root,
     group   => root,
-    ensure  => directory,
     require => Class['logrotate::install'],
   }
 }

@@ -1,6 +1,9 @@
+# Define: logrotate::file
+#
+#
 define logrotate::file (
-  $source = "${logrotate::params::confdir}/${name}",
   $log,
+  $source = "${logrotate::params::confdir}/${name}",
   $options = [ 'weekly', 'compress', 'rotate 7', 'missingok' ],
   $prerotate = 'NONE',
   $postrotate = 'NONE'
@@ -9,7 +12,7 @@ define logrotate::file (
     ensure  => present,
     owner   => root,
     group   => root,
-    mode    => 644,
+    mode    => '0644',
     content => template('logrotate/logrotate.erb'),
     require => Class['logrotate::config'],
   }

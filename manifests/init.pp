@@ -1,3 +1,6 @@
+# Class: logrotate
+#
+#
 class logrotate () {
   # motd::register{'logrotate': }
 

@@ -3,7 +3,7 @@
 #
 class logrotate::install {
   package { $logrotate::params::pkg:
-    ensure => installed,
+    ensure  => installed,
     require => Class['logrotate::params'],
   }
 }
