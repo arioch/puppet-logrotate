@@ -22,13 +22,11 @@ describe 'logrotate' do
         $confdir = '/etc/logrotate.d'
 
         should create_class('logrotate')
-        should include_class('logrotate::install')
-        should include_class('logrotate::config')
+        should contain_class('logrotate::install')
+        should contain_class('logrotate::config')
 
         should contain_file($confdir).with_ensure('directory')
         should contain_package($pkg).with_ensure('present')
- 
-        should_not raise_error(Puppet::ParseError)
       end
     end
   end
