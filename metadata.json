@@ -1,6 +1,6 @@
 {
   "name": "arioch-logrotate",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Tom De Vylder",
   "summary": "Logrotate module",
   "license": "Apache License, Version 2.0",
