@@ -1,2 +1,7 @@
 *.swp
 .DS_Store
+.vagrant/
+/.project
+Gemfile.lock
+pkg
+spec/fixtures
