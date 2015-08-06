@@ -1,3 +1,7 @@
+# Puppet-logrotate
+
+[![Build Status](https://travis-ci.org/arioch/puppet-logrotate.svg?branch=master)](https://travis-ci.org/arioch/puppet-logrotate)
+
 ## Basic usage
 
     node 'node1.domain.tld' {
