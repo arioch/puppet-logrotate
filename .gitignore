@@ -1,7 +1,9 @@
-*.swp
-.DS_Store
-.vagrant/
-/.project
+pkg/
 Gemfile.lock
-pkg
-spec/fixtures
+vendor/
+spec/fixtures/
+.vagrant/
+.bundle/
+coverage/
+.idea/
+*.iml
