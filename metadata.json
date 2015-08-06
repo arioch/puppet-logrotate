@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "author": "Tom De Vylder",
   "summary": "Logrotate module",
-  "license": "Apache License, Version 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/arioch/puppet-logrotate",
   "project_page": "http://arioch.github.io/puppet-logrotate/",
   "issues_url": "https://github.com/arioch/puppet-logrotate/issues",
